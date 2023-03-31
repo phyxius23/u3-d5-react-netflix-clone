@@ -40,9 +40,11 @@ class ShowFilms extends Component {
       <section>
         <div className="films mb-5">
           <Container>
-          <h2 className="mb-3 h4">{this.state.searchFilm}</h2>
 
-          {/* POSIZIONARE LO SPINNER IN CENTRO PAGINA/SECTION */}
+            {/* POSIZIONARE UN CONDIZIONALE CHE NEL CASO NON FOSSERO STATI TROVATI DEI FILM DEVE MOSTRARE A VIDEO UN ALERT CHE CI AVVISI */}
+            <h2 className="mb-3 h4">{this.state.searchFilm}</h2>
+
+            {/* POSIZIONARE LO SPINNER IN CENTRO PAGINA/SECTION */}
             {this.state.isLoading && !this.state.error && (
               <div className="text-center mt-5">
                 <Spinner animation="border" variant="secondary" role="status">

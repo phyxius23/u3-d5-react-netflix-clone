@@ -3,7 +3,7 @@ import avatar from '../assets/img/kids_icon.png'
 
 const { Component } = require("react");
 
-class Profile extends Component {
+class AccountPage extends Component {
   render(){
     return(
       <Container className="container-profile custom-color">
@@ -76,4 +76,4 @@ class Profile extends Component {
     )
   }
 }
-export default Profile;
+export default AccountPage;

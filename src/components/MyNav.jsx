@@ -15,7 +15,7 @@ class MyNav extends Component {
             <Image src={logo} height="40" alt="Netflix" />
           </Navbar.Brand>
 
-          {!((this.props.profilePage).toLowerCase() === 'true') && (
+          {!((this.props.accountPage).toLowerCase() === 'true') && (
             <>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
